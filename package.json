@@ -1,0 +1,23 @@
+{
+  "name": "umatch_backend",
+  "version": "1.0.0",
+  "description": "Match making demo project",
+  "keywords": [
+    "nodejs",
+    "js",
+    "express",
+    "mongo"
+  ],
+  "license": "ISC",
+  "author": "aditya-1207",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "nodemon": "^3.1.14"
+  }
+}
