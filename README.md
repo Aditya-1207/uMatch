@@ -1,1 +1,1 @@
-Backend for uMatch, a match-making app for impaired special people out there!
+A tinder-like platform for learning nodejs-reactjs
