@@ -10,14 +10,22 @@ app.listen("1207",()=>{
 
 //Request handlers
 
-app.use("/test",(req,res) => {
-    res.send("from test api");
+app.get("/profile",(req,res)=>{
+    res.send({firstName:"Aditya",lastName:"Dhar"});
 });
 
-app.use("/hello",(req,res)=>{
-    res.send("from hello API")
+app.post("/profile",(req,res)=>{
+    res.send("Profile created successfully")
 });
 
-app.use("/",(req,res)=>{
-    res.send("Hello Wor1ld!")
+app.put("/profile",(req,res)=>{
+    res.send("Profile updated successfull")
+});
+
+app.delete("/profile",(req,res)=>{
+    res.send("Profile deleted successfully")
+});
+
+app.use("/",(req,res) =>{
+    res.send("This is from parent request handler");
 });
